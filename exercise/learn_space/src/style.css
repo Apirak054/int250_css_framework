@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Apply dark */
+@custom-vartant dark ((&:where•dark, •dark *))
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar สำหรับความสวยงาม */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
